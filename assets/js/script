@@ -1,1 +1,21 @@
 
+(function(){
+  const langButton=document.getElementById('langToggle');
+  const menu=document.querySelector('.nav-links');
+  const menuToggle=document.querySelector('.menu-toggle');
+  const setLang=(lang)=>{
+    document.documentElement.lang=lang;
+    localStorage.setItem('portfolioLang',lang);
+    document.querySelectorAll('[data-fr][data-en]').forEach(el=>{
+      el.innerHTML=el.dataset[lang];
+    });
+    if(langButton) langButton.textContent=lang==='fr'?'EN':'FR';
+  };
+  const initial=localStorage.getItem('portfolioLang')||'fr';
+  setLang(initial);
+  if(langButton){langButton.addEventListener('click',()=>setLang((localStorage.getItem('portfolioLang')||'fr')==='fr'?'en':'fr'));}
+  if(menuToggle && menu){menuToggle.addEventListener('click',()=>menu.classList.toggle('open'));}
+  document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>menu&&menu.classList.remove('open')));
+  const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+})();
+
