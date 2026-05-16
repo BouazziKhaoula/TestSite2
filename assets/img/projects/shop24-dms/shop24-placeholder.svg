@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#1f4e79"/><stop offset="1" stop-color="#0b7285"/></linearGradient></defs>
+<rect width="1200" height="760" fill="#f4f8fb"/><rect x="70" y="70" width="1060" height="620" rx="32" fill="white" stroke="#c9d6e2" stroke-width="3"/>
+<rect x="70" y="70" width="1060" height="110" rx="32" fill="url(#g)"/><text x="120" y="140" font-family="Arial" font-size="45" font-weight="700" fill="white">Shop24 DMS</text>
+<text x="120" y="270" font-family="Arial" font-size="34" fill="#223">Client, stock and order management platform</text>
+<rect x="120" y="340" width="280" height="70" rx="16" fill="#eaf3f8"/><text x="150" y="386" font-family="Arial" font-size="26" fill="#1f4e79" font-weight="700">Node.js · Express · React · MongoDB</text>
+<rect x="120" y="450" width="960" height="35" rx="10" fill="#e5ecf3"/><rect x="120" y="510" width="800" height="35" rx="10" fill="#e5ecf3"/><rect x="120" y="570" width="650" height="35" rx="10" fill="#e5ecf3"/>
+</svg>
